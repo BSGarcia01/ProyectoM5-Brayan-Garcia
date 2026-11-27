@@ -4,10 +4,10 @@
   "description": "Proyecto integrador del módulo 5 de Soy Henry.",
   "main": "dist/server.js",
   "scripts": {
-  "build": "tsc",
-  "start": "node dist/server.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BSGarcia01/ProyectoM5-Brayan-Garcia.git"
@@ -23,5 +23,9 @@
   "devDependencies": {
     "@types/node": "^24.19.4",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
   }
 }

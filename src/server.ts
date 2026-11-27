@@ -1,3 +1,13 @@
-const nombreProyecto: string = "Servidor MCP para GitHub";
+import { McpServer } from "@modelcontextprotocol/server";
+import { serveStdio } from "@modelcontextprotocol/server/stdio";
 
-console.error(`${nombreProyecto}: compilación y ejecución verificadas.`);
+function crearServidor() {
+  const servidor = new McpServer({
+    name: "github-mcp-server",
+    version: "1.0.0",
+  });
+
+  return servidor;
+}
+
+serveStdio(crearServidor);
